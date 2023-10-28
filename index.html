@@ -1,44 +1,127 @@
 <!DOCTYPE html>
 <html lang="Pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>webSite</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/scrollreveal"></script><!--Scroll Reveal-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link href="/IMG/hamburger.png" rel="shortcut icon" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" /><!--Font-->
+  <link rel="stylesheet" type="text/css" href="./CSS/style.css"><!--CSS LINK-->
+  <title>Code Burger</title><!--Título-->
 </head>
+
 <body>
-    <header>
-        <nav class="navigation">
-            <a href="index.html" class="logo">C<span>od</span>e G<span>ri</span>ll</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html">Home</a></li>
-                <li class="nav-item"><a href="sobre.html">Sobre</a></li>
-                <li class="nav-item"><a href="menu.html">Menu</a></li>
-                <li class="nav-item"><a href="contato.html">Contato</a></li>
-                <i class='bx bx-search'></i>
-            </ul>
-            <div class="menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="home">
-            <div class="home-text">
-                <h4 class="text-h4">Bem vindo ao Code Grill</h4>
-                <h1 class="text-h1">A melhor hamburgueria de santana</h1>
-                <p>desde 2023</p>
-                <a href="#" class="home-btn">Início</a>
-            </div>
-            <div class="home-img">
-                <img src="imagem.png" alt="hamburguer">
-            </div>
+  <header id="topo">
+    <nav class="navigation">
+      <a href="index.html" class="logo">C<span>od</span>e B<span>ur</span>ger</a><!--Logo-->
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html">Home</a></li><!--nav item-->
+        <li class="nav-item"><a href="#sobre">Sobre</a></li><!--nav item-->
+        <li class="nav-item"><a href="#menu">Menu</a></li><!--nav item-->
+        <li class="nav-item"><a href="#contato">Contato</a></li><!--nav item-->
+        <section>
+          <input type="search" placeholder="🔎"><!--Barra de pesquisas-->
         </section>
-    </main>
-    <script src="script.js"></script>
+      </ul>
+      <div class="menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="home">
+      <div class="home-text">
+        <h4 class="text-h4">Bem vindo</h4>
+        <h1 class="text-h1">O melhor hamburger</h1>
+          <p>desde 2023</p>
+      </div><!--Home Text-->
+      
+      <div class="home-img">
+        <img src="./IMG/home.png" alt="hamburguer">
+      </div><!--Imagem da home-->
+   
+    </section>
+  <main>
+
+    <main>
+      <section class="content-page">
+          <div class="content-text">
+            <h2 class="text-page-h2">Novidades</h2>
+              <h4 class="text-h4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, vitae!</h4>
+              <p>Lorem ipsum dolor sit amet.</p>
+          </div><!--Home Text-->
+
+          <div class="page-img">
+              <img src="./IMG/batata-frita.png" alt="Batata frita">
+          </div><!--Imagem da home-->
+      </section>
+  </main>
+
+
+  <div class="wrapper">
+      <main>
+          <section class="module parallax parallax-1">
+              <h2 class="area-1" id="sobre">Sobre</h2>
+          </section>
+
+          <section class="module content">
+              <div class="container">
+                  <h2 class="h2-sobre">Sobre nossa empresa</h2>
+                  <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
+                      dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
+                      vel et,
+                      magnam eius!
+                  </p>
+                  <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
+                      dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
+                      vel et,
+                      magnam eius!
+                  </p>
+              </div>
+          </section><!--Sobre-->
+
+
+          <section class="module parallax parallax-2">
+              <h2 class="area-2" id="menu">Menu</h2>
+          </section>
+
+          <section class="module content">
+              <div class="container">
+                  <h2>Nossos hamburgueres</h2>
+                  <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
+                      dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
+                      vel et,
+                      magnam eius!
+                  </p>
+                  <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam reiciendis unde voluptatem
+                      dignissimos! Adipisci alias rerum commodi ad excepturi. Quod aut maxime non architecto numquam
+                      vel et,
+                      magnam eius!
+                  </p>
+              </div>
+          </section><!--Menu-->
+      </main>
+  </div>
+
+  <div>
+      <a href="#" class="topo"><img src="./IMG/top.png" class="topo"></a>
+  </div>
+
+  <footer>
+    <!--Fazer Área De contato no FOOTER-->
+  </footer>
+
+      <script type="text/javascript" src="./js/web.js"></script><!--JS-LINK-->
 </body>
+
 </html>

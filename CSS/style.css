@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Configurações gerais */
+
+:root {
+    --blue: #1d8bd4;
+    --white: #fff;
+    --dark: #1e1c2a;
+}
+
+/* Predefinições das cores */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* rolagem lenta */
+
+body {
+    color: var(--dark);
+    background: var(--white);
+}
+
+/* cor do corpo */
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #06489e34;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #1d8bd4;
+    border-radius: 20px;
+}
+
+/* Barra de pesquisa personalizada */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    position: fixed;
+}
+
+.navigation .logo {
+    color: var(--blue);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.logo span {
+    color: var(--dark);
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navigation ul li a {
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+    color: var(--blue);
+}
+
+.navigation i {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+input[type=search] {
+    width: 160px;
+    padding: 8px 20px 8px 45px;
+    border: #ffffff solid 2px;
+    font-size: 18px;
+    border-radius: 25px;
+    background-position: 2% 50%;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-color: transparent;
+    transition: all ease-in-out 0.5s;
+    filter: brightness(170%);
+}
+
+input[type-search]:focus,
+input[type=search]:not(:placeholder-shown) {
+    width: 350px;
+    background-color: #FFF;
+    filter: brightness(100%);
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3) {
+    background: var(--blue);
+}
+
+/* Header (Home, Sobre, Menu, Contato, Barra de pesquisa) */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 10%;
+}
+
+.home-text {
+    max-width: 37rem;
+}
+
+.home-text .text-h4 {
+    font-size: 1.5rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+
+.home-text .text-h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+}
+
+.home-text p {
+    margin-bottom: 4rem;
+}
+
+.home-btn {
+    padding: 15px 45px;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.home-btn:hover {
+    background: rgb(0, 162, 255);
+}
+
+.home-img img {
+    width: 100%;
+}
+
+/* Texto e Imagem da pagina principal */
+
+
+
+
+
+
+
+
+
+
+.content-page {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row-reverse;/* APAGAR DEPOIS DE EDITAR( muda a direção da imagem e texto )APAGAR DEPOIS DE EDITAR */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    padding: 0px 10%;
+    background-color: #ece7d5;
+}
+
+.content-text {
+    max-width: 37rem;
+}
+
+.content-text .text-page-h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    line-height: 4rem;
+    color: rgb(128, 66, 66);
+}
+
+.content-text .text-h4 {
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-bottom: 1rem;
+}
+
+.content-text p {
+    margin-bottom: 4rem;
+    color: rosybrown;
+}
+
+.page-img img {
+    width: 70%;
+    margin: 0 30%;
+}
+
+/* Texto e Imagem da pagina segundaria */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-content {
+    display: block;
+    background-color: #fff;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.h2-module {
+    font-weight: 900;
+    color: var(--dark);
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module .h2-sobre {
+    font-family: 'Ramabhadra', sans-serif;
+    font-weight: 900;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+section.module.content {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    background: #ffffff;
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+}
+
+section.module.parallax-1 {
+    background-image: url("https://a.cdn-hotels.com/gdcs/production156/d1067/98b5cb4d-ea36-43fd-b3ca-21ae04c7c770.jpg");
+}
+
+section.module.parallax-2 {
+    background-image: url("https://www.tastingtable.com/img/gallery/what-makes-restaurant-burgers-taste-different-from-homemade-burgers-upgrade/intro-1662064407.jpg");
+}
+
+
+.area-1,
+.area-2 {
+    visibility: hidden;
+    text-shadow: 2px 2px 5px black;
+}
+
+section.module.parallax h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+
+.topo {
+    background: #1d8bd4;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-top {
+    width: 40px;
+}
+
+/* Botão para voltar ao início */
+
+@media (max-width:785px) {
+    .navigation {
+        padding: 18px 20px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu.ativo .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu.ativo .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+
+    .nav-menu.ativo {
+        right: 0;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    /*main*/
+    .home {
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+
+    .home .text-h4 {
+        font-size: 15px;
+    }
+
+    .home .text-h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .home p {
+        font-size: 15px;
+    }
+
+    .home-img {
+        width: 125%;
+    }
+
+    section.module h2 {
+        font-size: 32px;
+    }
+
+    .module h2,
+    p {
+        padding: 0 8px;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    section.module.parallax h2 {
+        font-size: 36px;
+    }
+
+    .content-page{
+        flex-wrap: wrap;
+    }
+    
+    .content-text .text-page-h2 {
+        font-size: 4rem;
+        padding: 5% 0;
+    }
+    
+    .content-text .text-h4 {
+        font-size: 1.5rem;
+        color: var(--dark);
+        margin-bottom: 1rem;
+    }
+    
+    .content-text p {
+        margin-bottom: 4rem;
+        color: rosybrown;
+    }
+    
+    .page-img img {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+/* Responsividade */
